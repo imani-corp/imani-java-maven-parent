@@ -23,6 +23,7 @@
 	  <commons-collections4.version>4.3</commons-collections4.version>
 	  <joda-time.version>2.10.2</joda-time.version>
       <usertype.core.version>7.0.0.CR1</usertype.core.version>
+	  <jackson-datatype-jdk8.version>2.9.9</jackson-datatype-jdk8.version>
 	  <stripe-java.version>10.0.2</stripe-java.version>
 	  <commons-codec.version>1.12</commons-codec.version>
 	  <joda-money.version>1.0.1</joda-money.version>
@@ -83,6 +84,13 @@
 			<groupId>org.joda</groupId>
 			<artifactId>joda-money</artifactId>
 			<version>${joda-money.version}</version>
+		</dependency>
+
+		<!-- JSON API's -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jdk8</artifactId>
+			<version>${jackson-datatype-jdk8.version}</version>
 		</dependency>
 
 		<!-- Encryption strategy -->
