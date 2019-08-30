@@ -29,6 +29,8 @@
 	  <commons-codec.version>1.12</commons-codec.version>
 	  <joda-money.version>1.0.1</joda-money.version>
 	  <java-jwt.version>3.8.1</java-jwt.version>
+	  <cache-api.version>1.1.1</cache-api.version>
+	  <ehcache.version>3.8.0</ehcache.version>
   </properties>
   
   <dependencyManagement>
@@ -120,8 +122,23 @@
 			<artifactId>java-jwt</artifactId>
 			<version>${java-jwt.version}</version>
 		</dependency>
-		
-  	</dependencies>
+
+		<!--  Caching API's -->
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+			<version>${cache-api.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>${ehcache.version}</version>
+		</dependency>
+
+
+
+	</dependencies>
   </dependencyManagement>
 
 	<build>
